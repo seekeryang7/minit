@@ -9,6 +9,12 @@
 
 body {
     background-color: black;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+
+.colored {
+    color: #ffad09 !important;
 }
 
 .header {
@@ -31,6 +37,7 @@ body {
     text-decoration: none;
     color: white;
     transition: color .5s;
+    margin-right: 80px;
 }
 
 .logo a:hover {

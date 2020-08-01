@@ -4,10 +4,10 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지판 글쓰기 | NEXT x LIKELION</title>
+    <title>Contact | NEXT x LIKELION</title>
     <link rel="icon" href="../static/image/favicon_package_v0.16/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'write.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css'%}">
 </head>
 <body>
     <div class="header">
@@ -21,20 +21,17 @@
             <a href="{% url 'about'%}">About</a>
             <a href="{% url 'curriculum'%}">Curriculum</a>
             <a href="{% url 'network'%}">Network</a>
-            <a class="colored" href="{% url 'board'%}">Board</a> 
-            <a href="{% url 'contact'%}">Contact</a>
+            <a href="{% url 'board'%}">Board</a> 
+            <a class="colored" href="{% url 'contact'%}">Contact</a>
         </div>
     </div>
-    <div class="main-title notosans">
-        <div>글쓰기&nbsp;ㅣ<span>&nbsp;FAQ</span></div>
+    <div style="width: 100%;" class="fcc">
+        <img style="width: 50%;" src="{% static 'image/lion_says_roar.jpg'%}" alt="">
+        <div class="notosans" style="font-size: 20px; font-weight: lighter; line-height: 2.5; padding: 0 200px; width: 25%; padding: 20px;">
+            <div><span style="font-weight: normal; margin-right: 10px;">CALL:</span> 010 - 3146 - 1147</div>
+            <div><span style="font-weight: normal; margin-right: 10px;">EMAIL:</span> info@likelion.com</div>
+            <div><span style="font-weight: normal; margin-right: 10px;">FAX:</span> 0501-275-9748</div>
+        </div>
     </div>
-    <form method="POST">
-        {% csrf_token %}
-        <div class="notosans">제목</div>
-        <input class="post_title" name="title" placeholder="제목을 입력해주세요">
-        <div class="notosans">내용</div>
-        <textarea class="post_content" name="content" placeholder="내용을 입력해주세요"></textarea>
-        <button type="submit">포스팅</button>
-    </form>
 </body>
 </html>

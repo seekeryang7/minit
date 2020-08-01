@@ -8,7 +8,7 @@
     <link rel="icon" href="../static/image/favicon_package_v0.16/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'detail.css'%}">
-</head>gene
+</head>
 <body>
     <div class="header">
         <div class="logo roboto">
@@ -18,9 +18,11 @@
             </a>   
         </div>
         <div class="nav notosans">
-            <a href="{% url 'general'%}">자유게시판</a>
-            <a href="{% url 'notice'%}">공지방</a>
-            <a href="{% url 'qa'%}">Q&A</a> 
+            <a href="{% url 'about'%}">About</a>
+            <a href="{% url 'curriculum'%}">Curriculum</a>
+            <a href="{% url 'network'%}">Network</a>
+            <a class="colored" href="{% url 'board'%}">Board</a> 
+            <a href="{% url 'contact'%}">Contact</a>
         </div>
     </div>
     <div class="main-title notosans">
@@ -29,7 +31,7 @@
     <div class="main-content notosans">
         <p>{{detail_general.content}}</p>
     </div>
-    <a class="button_new" href="{% url 'general'%}">
+    <a class="button_new" href="{% url 'board'%}">
         <img src="{%static '../static/image/arrows.png'%}" alt="">
     </a>
 </body>

@@ -19,14 +19,25 @@ from board import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     path('', views.index, name='index'),
-    path('general',views.general, name='general'),
-    path('notice',views.notice, name='notice'),
-    path('qa',views.qa,name='qa'),
-    path('detail_general/<int:pk_selected>',views.detail_general, name='detail_general'),
-    path('detail_notice/<int:pk_selected>',views.detail_notice, name='detail_notice'),
-    path('detail_qa/<int:pk_selected>',views.detail_qa, name='detail_qa'),
-    path('write_general',views.write_general, name='write_general'),
-    path('write_notice',views.write_notice, name='write_notice'),
-    path('write_qa',views.write_qa, name='write_qa'),
+    path('network', views.network, name='network'),
+    
+    path('board/',views.board, name='board'),
+    path('board/notice',views.notice, name='notice'),
+    path('board/qa',views.qa,name='qa'),
+
+    path('board/detail_general/<int:pk_selected>',views.detail_general, name='detail_general'),
+    path('board/detail_notice/<int:pk_selected>',views.detail_notice, name='detail_notice'),
+    path('board/detail_qa/<int:pk_selected>',views.detail_qa, name='detail_qa'),
+    path('board/write_general',views.write_general, name='write_general'),
+    path('board/write_notice',views.write_notice, name='write_notice'),
+    path('board/write_qa',views.write_qa, name='write_qa'),
+
+    path('contact/',views.contact, name='contact'),
+
+    path('curriculum', views.curriculum, name='curriculum'),
+    path('about', views.about, name='about'),
+
+
 ]

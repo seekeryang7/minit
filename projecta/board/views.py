@@ -3,9 +3,15 @@ from .models import Article, Announcement, Question
 import datetime
 
 # Create your views here.
-def index (request):
-    return render(request, 'index.html')
-    
+def board(request):
+    articles = Article.objects.all()
+    return render(request, 'board.html', {
+        'general': articles,
+        })
+
+def contact(request):
+    return render(request, 'contact.html')
+
 def general(request):
     articles = Article.objects.all()
     articles_number = articles.count()
@@ -47,7 +53,6 @@ def write_general(request):
         new_article = Article.objects.create(
             title = request.POST['title'],
             content = request.POST['content'],
-            time = datetime.datetime.now()
         )
         return redirect('detail_general', pk_selected = new_article.pk)
     return render(request, 'write_general.html')
@@ -70,6 +75,17 @@ def write_qa(request):
         return redirect('detail_qa', pk_selected = new_question.pk)
     return render(request, 'write_qa.html')
 
+def curriculum(request):
+    return render(request, 'curriculum.html')
 
+
+def about(request):
+    return render(request, 'about.html')
+
+def index (request):
+    return render(request, 'index.html')
+
+def network (request):
+    return render(request, 'network.html')
 
 

@@ -9,6 +9,12 @@
 
 body {
     background-color: black;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+
+.colored {
+    color: #ffad09 !important;
 }
 
 .header {
@@ -31,6 +37,7 @@ body {
     text-decoration: none;
     color: white;
     transition: color .5s;
+    margin-right: 80px;
 }
 
 .logo a:hover {
@@ -109,12 +116,20 @@ form div {
     width: 65%;
     height: 30px;
     margin-top: 10px;
+    box-sizing: border-box;
+    padding: 25px 20px;
 }
 
 .post_content {
     width: 65%;
     height: 30vh;
     margin-top: 10px;
+    box-sizing: border-box;
+    padding: 25px 20px;
+}
+
+textarea::placeholder {
+    position: relative;
 }
 
 form button {

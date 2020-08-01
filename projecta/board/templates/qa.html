@@ -4,10 +4,10 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q&A | NEXT x LIKELION</title>
+    <title>Board | NEXT x LIKELION</title>
     <link rel="icon" href="../static/image/favicon_package_v0.16/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'list.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css'%}">
 </head>
 <body>
     <div class="header">
@@ -18,14 +18,19 @@
             </a>   
         </div>
         <div class="nav notosans">
-            <a href="{% url 'general'%}">자유게시판</a>
-            <a href="{% url 'notice'%}">공지방</a>
-            <a href="{% url 'qa'%}">Q&A</a> 
+            <a href="{% url 'about'%}">About</a>
+            <a href="{% url 'curriculum'%}">Curriculum</a>
+            <a href="{% url 'network'%}">Network</a>
+            <a class="colored" href="{% url 'board'%}">Board</a> 
+            <a href="{% url 'contact'%}">Contact</a>
         </div>
     </div>
-    <div class="main-title notosans">
-        <div>Q&A <span class="number">게시물: {{questions_number}}</span></div>
-    </div>
+    <div>
+        <div class="fcc main-title notosans">
+            <a class="fcc main-title-unselected" href="{% url 'board'%}">자유게시판</a>
+            <a class="fcc main-title-unselected" href="{% url 'notice'%}">공지판</a>
+            <a class="fcc main-title-selected" href="{% url 'qa'%}">FAQ</a>
+        </div>
         <div class="main-content">
             <div class="content notosans">
                 {% for question in qa%}
@@ -36,5 +41,6 @@
         <div class="button_new notosans">
             <a href="{% url 'write_qa' %}">글쓰기</a> 
         </div>
+    </div>
 </body>
 </html>
