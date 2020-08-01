@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT x LIKELION</title>
+    <link rel="icon" href="../static/image/favicon_package_v0.16/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'network.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo roboto">
+            <a href="{% url 'index'%}">
+                <img src="{% static '../static/image/lion.png' %}" alt="logo">
+                <p class="title">NEXT <span>X</span> LIKE<span>LION</span></p> 
+            </a>   
+        </div>
+        <div class="nav notosans">
+            <a href="{% url 'about'%}">About</a>
+            <a href="{% url 'curriculum'%}">Curriculum</a>
+            <a href="{% url 'network'%}">Network</a>
+            <a href="{% url 'board'%}">Board</a>
+            <a href="{% url 'contact'%}">Contact</a>
+        </div>
+    </div>
+    <div class="network_detail">
+        <div class="network_detail_text">
+        멋쟁이사자처럼을 거쳐간 많은 사람들이 세상에 필요한 서비스를 만들어내고 있습니다</div>
+        </div>
+    </div>
+    <div class="network_content">
+        <div class="network_content_box">
+            <div class="network_team">
+                <a href=https://taling.me/>
+                <img class="network_img" src="../static/image/logo_taling.png">
+                </a>
+            </div>
+            <div class="network_team">
+                <a href=https://www.dreamary.net/>
+                <img class="network_img" src="../static/image/logo_dreamary.jpg">
+                </a>
+            </div>
+            <div class="network_team">
+                <a href=https://chunmyung.com/>
+                <img class="network_img" src="../static/image/logo_chunmyung.png">
+                </a>
+            </div>        
+        </div>
+    
+        <div class="network_content_box">
+            <div class="network_team"></div>
+            <div class="network_team"></div>
+            <div class="network_team"></div>
+        </div>
+        <div class="network_content_box">
+            <div class="network_team"></div>
+            <div class="network_team"></div>
+            <div class="network_team"></div>
+        </div>
+    </div>
+    <div class="footer roboto">© Copyright 2020 Minit</div>
+</body>
+</html>
+
+

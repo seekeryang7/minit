@@ -7,7 +7,7 @@
     <title>NEXT x LIKELION</title>
     <link rel="icon" href="../static/image/favicon_package_v0.16/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'network_detail.css' %}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
@@ -27,42 +27,31 @@
             <a href="{% url 'contact'%}">Contact</a>
         </div>
     </div>
-    <div class="main">
-        <img src="{% static '../static/image/hackyourlife.png' %}" alt="logo">
+    <div class="network_detail">
+        <div class="network_detail_text">
+        멋쟁이사자처럼을 거쳐간 많은 사람들이 세상에 필요한 서비스를 만들어내고 있습니다</div>
+        </div>
     </div>
-    <div class="count">
-        <div class="count_box">
-            <div class="count_box_logo">
-                <span id="icon" class="material-icons">
-                star_rate
-                </span></div>
-            <div class="count_box_number">2012</div>
-            <div class="count_box_detail">창립연도</div>
-        </div>
-
-        <div class="count_box">
-            <div class="count_box_logo">
-                <span id="icon" class="material-icons">
-                    accessibility_new
-                    </span>
+    <div class="content">
+        <div class="content_box">
+        <div class="content_title">
+            <div class="content_title_top">
+                <h1>탈잉</h1><br/>
+                <h3>재능 공유 플랫폼</h3>
             </div>
-            <div class="count_box_number">270</div>
-            <div class="count_box_detail">누적 멤버 수</div>
-        </div>
-        <div class="count_box">
-            <div class="count_box_logo">
-                <span id="icon" class="material-icons">
-                    desktop_mac
-                    </span>
+            <div class="content_title_bottom">
+                <div class="content_title_bottom_left">사명<br/>제품명<br/>멋사 멤버<br/>홈페이지</div>
+                <div class="content_title_bottom_right">(주)탈잉<br/>재능공유플랫폼<br/>김윤환<br/><a href="https://taling.me/">https://taling.me/</a></div>
             </div>
-            <div class="count_box_number">
-                <span id="commit" class="material-icons">
-                    all_inclusive
-                    </span>
-            </div>
-            <div class="count_box_detail">누적 커밋 수</div>
+        </div>        
+        <div class="content_detail">
+            <div class="content_detail_text">
+            탈잉에서는 주식투자부터 시작해서 헬스PT, 방송댄스, 캘리그라피까지 350개 이상의 재능이 거래되고 있으며, <br/>
+            이 과정에서 고객들이 가장 최적의 튜터와 연결될 수 있게 도와주고 있습니다
         </div>
-
+        </div>
+    </div>
+    </div>
     </div>
     <div class="footer roboto">© Copyright 2020 Minit</div>
 </body>
