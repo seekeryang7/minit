@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커리큘럼 | NEXT x LIKELION</title>
+    <link rel="icon" href="../static/image/favicon_package_v0.16/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'list.css'%}">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo roboto">
+            <a href="{% url 'index'%}">
+                <img src="{% static '../static/image/lion.png' %}" alt="logo">
+                <p class="title">NEXT <span>X</span> LIKE<span>LION</span></p>
+            </a>
+        </div>
+        <div class="nav notosans">
+            <a href="{% url 'general'%}">자유게시판</a>
+            <a href="{% url 'notice'%}">공지방</a>
+            <a href="{% url 'qa'%}">Q&A</a>
+            <a href="{% url 'curriculum'%}">커리큘럼</a>
+        </div>
+    </div>
+
+    <div class="main-title notosans">
+        <div>커리큘럼</div>
+    </div>
+
+<div class="big">
+    <ol>
+        <li>
+            <button>
+                <strong>01</strong>
+                <h4>HTML</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>02</strong>
+                <h4>CSS 기초</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>03</strong>
+                <h4>CSS 중급</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>04</strong>
+                <h4>Python Basic</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>05</strong>
+                <h4>Python 심화</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>06</strong>
+                <h4>크롤링</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>07</strong>
+                <h4>장고1</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>08</strong>
+                <h4>장고2</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>09</strong>
+                <h4>장고3 CRUD</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>10</strong>
+                <h4>장고4 1:N</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>11</strong>
+                <h4>Deploy</h4>
+                <i></i>
+            </button>
+        </li>
+        <li>
+            <button>
+                <strong>12</strong>
+                <h4>DOM</h4>
+                <i></i>
+            </button>
+        </li>
+    </ol>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개 | NEXT x LIKELION</title>
+    <link rel="icon" href="../static/image/favicon_package_v0.16/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'list.css'%}">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo roboto">
+            <a href="{% url 'index'%}">
+                <img src="{% static '../static/image/lion.png' %}" alt="logo">
+                <p class="title">NEXT <span>X</span> LIKE<span>LION</span></p>
+            </a>
+        </div>
+        <div class="nav notosans">
+            <a href="{% url 'general'%}">자유게시판</a>
+            <a href="{% url 'notice'%}">공지방</a>
+            <a href="{% url 'qa'%}">Q&A</a>
+            <a href="{% url 'curriculum'%}">커리큘럼</a>
+            <a href="{% url 'about'%}">About</a>
+        </div>
+    </div>
+
+    <div class>
+        <h2 class="big-text">온라인 강의와 오프라인 활동을 통한 <br> 체계적인 <span style="color: #ffad09">프로그래밍 교육</span></h2>
+        <h6 class="small-text">
+            <span>자체 개발된 온라인 강의 플랫폼 '클래스라이언' 을 통해 강의를 듣고 과제를 수행합니다.</span><br>
+            <span>다양한 오프라인 활동과 병행하여 뜻을 같이하는 동료를 찾고</span><br>
+            <span>자신이 만들고자 하는 서비스를 직접 프로그래밍 하도록 돕습니다.</span><br>
+        </h6>
+    </div>
+
+    <div class="big">
+        <img class="service" src="{% static '../static/image/services.jpg' %}" alt="">
+    </div>
+
+</body>
+</html>
